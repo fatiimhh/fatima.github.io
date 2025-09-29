@@ -7,7 +7,7 @@ import photog from "../../Assets/Projects/photog.png";
 import admindash from "../../Assets/Projects/admindash.png";
 import interviewsim from "../../Assets/Projects/interviewsim.png";
 import myport from "../../Assets/Projects/myport.png";
-import aichatbot from "../../Assets/Projects/aichatbot.png";
+import romeai from "../../Assets/Projects/romeai.png";
 //import weatherapp from "../../Assets/Projects/weatherapp.png";
 import aiformvalidator from "../../Assets/Projects/aiformvalidator.png";
 
@@ -23,6 +23,19 @@ function Projects() {
          
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+            <Col md={4} className="project-card">
+            <ProjectCard
+            imgPath={romeai} 
+              isBlog={false}
+              title="AI Powered ChatApp"
+              description="Rome is an AI-powered workflow assistant designed to integrate directly into your browser or web apps.
+It allows users to chat via text or voice, save conversations, and provides real-time AI-powered suggestions or responses. Built with React, Tailwind CSS, Firebase Authentication, Node.js/Express, and the Groq API, with optional deployment as a Chrome extension."
+              ghLink="https://github.com/fatiimhh/AI-Powered-ChatApp"
+              demoLink="https://ai-powered-chat-app-delta.vercel.app/" 
+            />
+          </Col>
+
 
 
           <Col md={4} className="project-card">
@@ -50,7 +63,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+        {/*   <Col md={4} className="project-card">
             <ProjectCard
             imgPath={aichatbot} 
               isBlog={false}
@@ -60,7 +73,7 @@ function Projects() {
               ghLink="https://github.com/fatiimhh/ai-support-chatbot"
               demoLink="https://fatiimhh.github.io/ai-support-chatbot/" 
             />
-          </Col>
+          </Col>*/}
           
         <Col md={4} className="project-card">
             <ProjectCard
